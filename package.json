@@ -1,0 +1,37 @@
+{
+  "name": "mqtt-file-data-publisher",
+  "description": "Some MQTT file data publisher.",
+  "author": "Athens Information Technology <info@ait.gr>",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.1.0",
+    "npm": ">=5.6.0"
+  },
+  "scripts": {
+    "lint": "eslint *.js --color",
+    "precommit": "npm run lint",
+    "start": "nodemon --inspect=9228 --exec 'node -r dotenv/config' index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:far-edge/mqtt-file-data-publisher.git"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "dotenv": "^5.0.1",
+    "joi": "^13.2.0",
+    "moment": "^2.18.1",
+    "mqtt": "^2.18.0",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "husky": "^0.14.3",
+    "nodemon": "^1.11.0"
+  }
+}
